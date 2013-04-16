@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Registrierung </title>
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+	
+	<body>
+		<div id="header">
+			<h1>Fotoblog</h1>
+		</div>
+				
+		<div id="navi">
+			<ul>
+				<li><button> Family</button></li>
+				<li><button> Friends</button></li>
+				<li><button> Animals</button></li>
+				<li><button> Comunity</button></li>
+			</ul>
+	
+			<form action="login.php">
+			<input class="search_input" type="text" name="suche">
+			<button class="search_button" type="submit">go</button>
+			</form>	
+		</div><!-- ende navi -->
+		
+		<div id="content-full">
+			<div class="form-container">
+				<form class="register" action="register.php" method="post">
+				
+					<p>
+						<label for="username">Benutzername</label>
+						<input id="username" type="text" name"username">
+					</p>
+					
+					<p>
+						<label for="password">Passwort</label>
+						<input id="password" type="text" name="password">
+					</p>
+					
+					<p>
+						<label for="firstname">Vorname</label>
+						<input id="firstname" type="text" name="firstname">
+					</p>
+					
+					<p>
+						<label for="lastname">Nachname</label>
+						<input id="lastname" type="text" name="lastname">
+					</p>
+					
+					<p>
+						<label for="street">Strasse</label>
+						<input id="street" type="text" name="street">
+					</p>
+					
+					<p>
+						<label for="postnr">PLZ</label>
+						<input id="postnr" type="text" name="postnr">
+					</p>
+					
+					<p>
+						<label for="city">Stadt</label>
+						<input id="city" type="text" name"city">
+					</p>
+					
+					<p>
+						<label for="tel">Telefonnummer</label>
+						<input id="tel" type="tel" name"tel">
+					</p>
+					
+					<p>
+						<label for="email">E-Mail</label>
+						<input id="email" type="email" name"email">
+					</p>
+					
+					<p>
+					<button type="submit">Registieren</button>
+					</p>
+					<div class="clear"></div>
+
+					
+			</form>
+			
+			
+			</div>	
+			
+			
+			
+		</div>
+		
+		
+		
+		
+	</body>
+</html>
