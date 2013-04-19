@@ -1,0 +1,61 @@
+
+<!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 strict//EN" "http://www.w3.org/TR/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Bilder-Upload</title>
+		<meta name="author" content="Beate Gericke" />
+		<meta name="description" content="Seite für den Upload von Bildern" />
+		<meta name="keywords" content="Upload, hochladen" />
+		<meta name="date" content="2013-04-09" />
+		<meta name="robots" content="index, follow" />
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+	<body>
+			<div id="header">
+			<h1>Fotoblog</h1>
+		</div>
+
+		<div id="navi">
+			<ul>
+				<li><button> Family</button></li>
+				<li><button> Friends</button></li>
+				<li><button> Animals</button></li>
+				<li><button> Comunity</button></li>
+			</ul>
+		</div>
+
+			<div class="form-container">
+				<div class="content">
+				<form action="upload.php" method="post">
+						<fieldset>
+							<legend>Bilder-Upload</legend>
+					<div class="left">
+						<p><input type="file" name="Durchsuchen" value="Durchsuchen ..." /></p>
+						<p>Bildtitel:<input class="normal" type="text" name="Bildtitel" /></p>
+						<p>Bildbeschreibung:</p><textarea name="Bildbeschreibung" rows="10" cols="60">Hier k&ouml;nne Sie Beschreibungen zu Ihrem Bild eingeben. Z.B. wo und wann die Aufnahme entstand, welche Kameraeinstellungen Sie verwendet haben und alles was Sie dazu zu sagen haben.</textarea>
+					</div>
+					<div class="checkbox-categories">
+						<p>Kategorie/n:</p>
+							<lable><input type="checkbox" name="Kategorien" value="Landschaft">Landschaft</lable>
+							<label><input type="checkbox" name="Kategorien" value="Portraits">Portrais</label>
+							<label><input type="checkbox" name="Kategorien" value="Kinder">Kinder</label>
+							<label><input type="checkbox" name="Kategorien" value="Familie">Familie</label>
+							<label><input type="checkbox" name="Kategorien" value="Städte">Städte</label>
+							<label><input type="checkbox" name="Kategorien" value="Kunst">Kunst</label>
+							<label><input type="checkbox" name="Kategorien" value="Architektur">Architektur</label>
+							<label><input type="checkbox" name="Kategorien" value="Tiere">Tiere</label>
+							<label><input type="checkbox" name="Kategorien" value="Fashion">Fashion</label>
+							<label><input type="checkbox" name="Kategorien" value="Style">Style</label>
+							<button class="button" type="submit">hochladen</button>
+					</div>	
+						</fieldset>
+					</form>
+				</div>
+				<div class="sidebar"></div>				
+			</div>
+		</div>
+	</body>
+	
+</html>

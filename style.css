@@ -184,8 +184,14 @@ img{
 	float: right;
 }
 
+.checkbox-categories label{
+	display: block;
+	line-height: 20px;
+}
 
-
+.checkbox-categories button{
+	margin: 18px;
+	}
 
 
 
