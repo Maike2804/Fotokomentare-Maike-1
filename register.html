@@ -3,7 +3,6 @@
 	<head>
 		<title> Registrierung </title>
 		<link href="style.css" type="text/css" rel="stylesheet">
-		<script type="text/javascript" src="main.js"></script>
 	</head>
 	
 	<body>
@@ -19,24 +18,24 @@
 				<li><button> Comunity</button></li>
 			</ul>
 	
-			<form action="search.php">
-			<input class="search_input" type="text" name="suche">
-			<button class="search_button" type="submit">go</button>
+			<form name="search" action="search.php">
+				<input class="search_input" type="text" name="suche">
+				<button class="search_button" type="submit">go</button>
 			</form>	
 		</div><!-- ende navi -->
 		
 		<div id="content-full">
 			<div class="form-container">
-				<form class="register" action="register.php" method="post">
+				<form name="registerform" class="register" action="register.php" method="post" onsubmit="return registercheck();">
 				
 					<p>
 						<label for="username">Benutzername</label>
-						<input id="username" type="text" name"username">
+						<input id="username" type="text" name="username">
 					</p>
 					
 					<p>
 						<label for="password">Passwort</label>
-						<input id="password" type="text" name="password">
+						<input id="password" type="password" name="password">
 					</p>
 					
 					<p>
@@ -61,17 +60,17 @@
 					
 					<p>
 						<label for="city">Stadt</label>
-						<input id="city" type="text" name"city">
+						<input id="city" type="text" name="city">
 					</p>
 					
 					<p>
 						<label for="tel">Telefonnummer</label>
-						<input id="tel" type="tel" name"tel">
+						<input id="tel" type="tel" name="tel">
 					</p>
 					
 					<p>
 						<label for="email">E-Mail</label>
-						<input id="email" type="email" name"email">
+						<input id="email" type="email" name="email">
 					</p>
 					
 					<p>
@@ -91,6 +90,7 @@
 		
 		
 		
+		<script type="text/javascript" src="main.js"></script>
 		
 	</body>
 </html>
