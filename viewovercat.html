@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<title> Bildersuchergebnisse der Fotokommentare </title>
+<meta name="Author" content="Thies Schillhorn" />
+<!-- einbinden der Stylesheets -->
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<!-- der bekannte kopf der Fotokommentarseite -->
+		<div id="header">
+			<h1>Fotoblog</h1>
+		</div>
+				
+		<div id="navi">
+			<ul>
+				<li>
+					<button> Family</button>
+					<div class="dropdown-menue">
+						<ul>
+							<li><a href="#">Kinder</a></li>
+							<li><a href="#">M�tter</a></li>
+							<li><a href="#">V�ter</a></li>
+							<li><a href="#">Gro�eltern</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><button> Friends</button></li>
+				<li><button> Animals</button></li>
+				<li><button> Comunity</button></li>
+			</ul>
+	
+			<form action="search.php">
+			<input class="search_input" type="text" name="suche">
+			<button class="search_button" type="submit">go</button>
+			</form>	
+		</div><!-- ende navi -->
+
+<!-- ein Container mit den Bildern, die gemaess suchanfrage gefunden wurden 
+erstmal werden hier nur die bilder dargestellt -->
+<div id="container">
+<!-- die Liste der Bilder -->
+<ul>
+<li><a class="gallery slidea" href="#nogo"><span><img src="bilder/FeedTwice.jpeg" alt="No FeddTwice" title="A" /><br />A<br /></span></a></li>
+<li><a class="gallery slideb" href="#nogo"><span><img src="bilder/blowaway.jpeg" alt="No BlowAway" title="B" /><br />B<br /></span></a></li>
+<li><a class="gallery slidec" href="#nogo"><span><img src="bilder/header.jpg" alt="No Header" title="C" /><br />C<br /></span></a></li>
+<li><a class="gallery slided" href="#nogo"><span><img src="bilder/Vulcano.jpg" alt="No FeddTwice" title="D" /><br />D<br /></span></a></li>
+<li><a class="gallery slidee" href="#nogo"><span><img src="bilder/Thor.jpg" alt="No BlowAway" title="E" /><br />E<br /></span></a></li>
+<li><a class="gallery slidef" href="#nogo"><span><img src="bilder/Bryce.jpg" alt="No Header" title="F" /><br />F<br /></span></a></li>
+</ul >
+</div>
+
+</body>
+</html>
+
+

@@ -242,3 +242,115 @@ img{
 	height: 100px;
 	
 }
+
+/* Container der Suchergebnisuebersichtsseite; erster Entwurf Thies Schillhorn */
+#container {
+    position:relative; 
+    width:770px; 
+    height:396px; 
+    margin:20px auto 0 auto;
+    border:1px solid #aaa;
+}
+
+#container ul {
+    width:198px;
+    height:386px;
+    padding:0;
+    margin:5px;
+    list-style-type:none;
+    float:right;
+}
+
+#container li {
+    float:left;
+}
+
+#container a.gallery, #container a.gallery:visited {
+    display:block; 
+	color:#000; 
+	text-decoration:none; 
+	border:1px solid #000; 
+	margin:1px 2px 1px 2px; 
+	text-align:left;     
+	cursor:default;
+}
+
+/* erstes Bild und zweites bild, .... */
+/* weitere bilder könnten hinzugefügt werden -- erstmal alles nur über css und statisch */
+#container a.slidea {
+    background:url(bilder/FeedTwice.jpeg);
+	height:93px;
+	width:60px;
+}
+
+#container a.slideb {
+    background:url(bilder/Blowaway.jpeg);
+	height:93px;
+	width:60px;
+}
+
+#container a.slidec {
+    background:url(bilder/header.jpg);
+	height:93px;
+	width:60px;
+}
+
+#container a.slided {
+    background:url(bilder/Vulcano.jpg);
+	height:93px;
+	width:60px;
+}
+
+#container a.slidee {
+    background:url(bilder/Thor.jpg);
+	height:93px;
+	width:60px;
+}
+
+#container a.slidef {
+    background:url(bilder/Bryce.jpg);
+	height:93px;
+	width:60px;
+}
+
+#container a.gallery span {
+    position:absolute;
+	width:1px; 
+	height:1px; 
+	top:5px; 
+	left:5px; 
+	background:#fff; 
+	overflow:hidden;
+}
+
+#container a.gallery:hover {
+    border:1px solid #fff;
+}
+
+#container a.gallery:hover img {
+    border:1px solid #fff;
+	float:left; 
+	margin-right:5px;
+}
+
+#container a.slidea:hover img, #container a.slidei:hover img {
+    float:right;
+}
+
+#container a.slideb:hover img, #container a.slidei:hover img {
+    float:right;
+}
+
+#container a.slidec:hover img, #container a.slidei:hover img {
+    float:right;
+}
+
+#container a.gallery:hover span {
+    position:absolute;
+	width:372px;
+	height:372px;
+	top:10px; 
+	left:75px;
+	color:#000;
+	background:#fff;
+}
